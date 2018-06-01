@@ -1,12 +1,15 @@
-#include <iostream>
-#include <cstdlib>
-#include <cstring>
+#include "proxy.hpp"
+
+#include <unistd.h>
 #include <netinet/in.h>
 #include <arpa/inet.h>
 #include <sys/socket.h>
 #include <sys/types.h>
 #include <netdb.h>
-#include "proxy.hpp"
+
+#include <iostream>
+#include <cstring>
+#include <cstdlib>
 
 const int BUFFER_SIZE = 256;
 const int CLIENT_PORT = 11050;
